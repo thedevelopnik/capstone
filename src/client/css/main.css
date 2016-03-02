@@ -1,6 +1,7 @@
 .hero {
   height: 600px;
   position: fixed;
+  top: -10px;
   z-index: 0;
   background-image: url('/images/jumping.jpg');
   background-position: center;
@@ -31,7 +32,7 @@
 .overlap {
   position: relative;
   z-index: 1;
-  margin-top: 600px;
+  margin-top: 540px;
   background-color: white;
   opacity: 1;
   overflow: hidden;
