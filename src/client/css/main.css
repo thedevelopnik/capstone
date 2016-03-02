@@ -1,5 +1,5 @@
 .hero {
-  height: 300px;
+  height: 600px;
   position: fixed;
   z-index: 0;
   background-image: url('/images/jumping.jpg');
@@ -9,6 +9,10 @@
 }
 
 .centered {
+  margin: 0 auto;
+}
+
+.centered-text {
   text-align: center;
 }
 
@@ -17,10 +21,26 @@
   width: 100%;
 }
 
+.main-welcome {
+  position: relative;
+  left: 40%;
+  top: 60%;
+  color: #fff;
+}
+
 .overlap {
   position: relative;
   z-index: 1;
-  margin-top: 300px;
+  margin-top: 600px;
   background-color: white;
   opacity: 1;
+  overflow: hidden;
+}
+
+.attached {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  opacity: 1;
+  overlap: hidden;
 }
