@@ -1,0 +1,26 @@
+.hero {
+  height: 300px;
+  position: fixed;
+  z-index: 0;
+  background-image: url('/images/jumping.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 110%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.hm-img {
+  height: 100%;
+  width: 100%;
+}
+
+.overlap {
+  position: relative;
+  z-index: 1;
+  margin-top: 300px;
+  background-color: white;
+  opacity: 1;
+}
