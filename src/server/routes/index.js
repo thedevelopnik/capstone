@@ -11,4 +11,8 @@ router.get('/new-teacher', function(req, res, next) {
   res.render('sign-up-teach');
 });
 
+router.get('/new-school', function(req, res, next) {
+  res.render('sign-up-school');
+});
+
 module.exports = router;
