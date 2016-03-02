@@ -26,15 +26,13 @@
   </div>
 </nav>
 
-<section='container-fluid'>
+<section class='container-fluid'>
   <div class='row'>
-    <div class='col-md-1'>
-    </div>
-    <div class='col-md-10'>
+    <div class='col-md-12'>
       <form method='post'>
         <div class='form-group'>
           <label for='username'>Username</label>
-          <input type='text' maxlength='30' name='username' class='form-control' />
+          <input type='text' maxlength='30' placeholder='IHeartMontessori31' name='username' class='form-control' />
         </div>
 
         <div class='form-group'>
@@ -54,45 +52,57 @@
 
         <div class='form-group'>
           <label for='first_name'>First Name</label>
-          <input type='text' name='first_name' minlength='2' maxlength='30' class='form-control' />
+          <input type='text' name='first_name' placeholder='Sarah' minlength='2' maxlength='30' class='form-control' />
         </div>
 
         <div class='form-group'>
           <label for='last_name'>Last name</label>
-          <input type='text' name='last_name' minlength='2' maxlength='30' class='form-control' />
+          <input type='text' name='last_name' placeholder='Martinez' minlength='2' maxlength='30' class='form-control' />
         </div>
 
         <div class='form-group'>
-          <label for='program'>Montessori Training Program You Completed</label>
-          <input type='text' name='program' minlength='2' maxlength='50' class='form-control' />
+          <label for='training_id'>Montessori Training You Completed</label>
+          <select name='training_id' class='form-control'>
+            <option val='' selected disabled>-- Choose a Training Type --</option>
+            <option val='1'>American Montessori International</option>
+            <option val='2'>American Montessori Society</option>
+            <option val='3'>Montessori Center International</option>
+            <option val='4'>St. Nicholas Montessori</option>
+            <option val='5'>Institute for Guided Studies</option>
+            <option val='2'>Independent MACTE Accredited Program</option>
+            <option val='2'>Non-MACTE Accredited Program</option>
+          </select>
+        </div>
+
+        <div class='form-group'>
+          <label for='program'>Name of Program You Completed</label>
+          <input type='text' name='program' minlength='2' placeholder='The Montessori Institute, Denver' maxlength='30' class='form-control' />
         </div>
 
         <div class='form-group'>
           <label for='grad_year'>Year You Completed Training</label>
-          <input type='number' min='1950' max='2100' minlength='4' maxlength='4' class='form-control' />
+          <input type='number' name='grad_year' placeholder='2007' min='1950' max='2100' minlength='4' maxlength='4' class='form-control' />
         </div>
 
         <div class='form-group'>
           <label for='strengths'>Tell Us Your Strengths as a Montessori Educator (1000 character limit)</label>
-          <textarea name='strengths' maxlength='1000' class='form-control'></textarea>
+          <textarea name='strengths' placeholder='' maxlength='1000' class='form-control'></textarea>
         </div>
 
         <div class='form-group'>
           <label for='growth'>Tell Us About Some Areas of Growth (1000 character limit)</label>
-          <textarea name='growth' maxlength='1000' class='form-control'></textarea>
+          <textarea name='growth' placeholder='' maxlength='1000' class='form-control'></textarea>
         </div>
 
         <div class='form-group'>
           <label for='motto'>Tell Us Your Motto as a Montessori Educator (1000 character limit)</label>
-          <textarea name='motto' maxlength='1000' class='form-control'></textarea>
+          <textarea name='motto' placeholder='' maxlength='1000' class='form-control'></textarea>
         </div>
 
         <input type='submit' value='Sign Me Up!' class='btn btn-lg btn-success' />
       </form>
     </div>
-    <div class='col-md-1'>
-    </div>
-  </row>
+  </div>
 </section>
 
 {% endblock %}

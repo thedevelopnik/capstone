@@ -5,26 +5,179 @@
 
 {% block content %}
 
-  <nav class='navbar navbar-default navbar-fixed-top'>
-    <div class='container-fluid'>
-      <div class='navbar-header'>
-        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'>
-          <span class='sr-only'>Toggle navigation</span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-        </button>
-        <a class='navbar-brand' href='#'>Montessori Match</a>
-      </div>
-
-      <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-        <ul class='nav navbar-nav'>
-          <li><a href='/'>Home<span class='sr-only'>(current)</span></a></li>
-          <li><a href='/login'>Login<span class='sr-only'>(current)</span></a></li>
-        </ul>
-      </div>
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'>
+        <span class='sr-only'>Toggle navigation</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a class='navbar-brand' href='#'>Montessori Match</a>
     </div>
-  </nav>
+
+    <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+      <ul class='nav navbar-nav'>
+        <li><a href='/'>Home<span class='sr-only'>(current)</span></a></li>
+        <li><a href='/login'>Login<span class='sr-only'>(current)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class='container-fluid'>
+  <div class='row'>
+    <div class='col-md-12'>
+      <form method='post'>
+        <div class='form-group'>
+          <label for='username'>Username</label>
+          <input type='text' maxlength='30' name='username' class='form-control' />
+        </div>
+
+        <div class='form-group'>
+          <label for='password'>Password</label>
+          <input type='password' maxlength='100' minlength='8' name='password' class='form-control' />
+        </div>
+
+        <div class='form-group'>
+          <label for='password'>Confirm Password</label>
+          <input type='password' maxlength='100' minlength='8' name='password' class='form-control' />
+        </div>
+
+        <div class='form-group'>
+          <label for='profile_img'>Add a Profile Image (optional)</label>
+          <input type='file' accept='.png, .jpg, .jpeg,' name='profile_img' class='form-control'/>
+        </div>
+
+        <div class='form-group'>
+          <label for='location_id'>Location Type</label>
+          <select name='location_id' class='form-control' />
+            <option val='' selected disabled>-- Pick a Location Type</option>
+            <option val='1'>Urban</option>
+            <option val='1'>Suburban</option>
+            <option val='1'>Small City</option>
+            <option val='1'>Rural</option>
+          </select>
+        </div>
+
+        <div class='form-group'>
+          <label for='org_type_id'>Organization Type</label>
+          <select name='org_type_id' class='form-control' />
+            <option val='' selected disabled>-- Pick a Organization Type</option>
+            <option val='1'>Public - District</option>
+            <option val='2'>Public - Magnet</option>
+            <option val='3'>Public - Charter</option>
+            <option val='4'>Public - Innovation</option>
+            <option val='5'>Private - For Profit Single Ownership</option>
+            <option val='6'>Private - For Profit Corporate Ownership</option>
+            <option val='7'>Private - Non Profit</option>
+          </select>
+        </div>
+
+        <div class='form-group'>
+          <label for='size_id'>Size</label>
+          <select name='size_id' class='form-control' />
+            <option val='' selected disabled>-- Pick a Size</option>
+            <option val='1'>Small - 3 or Fewer Classrooms</option>
+            <option val='2'>Medium - 4 to 9 Classrooms</option>
+            <option val='3'>Large - 10 to 19 Classrooms</option>
+            <option val='4'>Extra Large - 20 or More Classrooms</option>
+          </select>
+        </div>
+
+        <div class='form-group'>
+          <label for='cal_type'>Calendar Type</label>
+          <select name='cal_type' class='form-control' />
+            <option val='' selected disabled>-- Pick a Calendar Type</option>
+            <option val='1'>9-10 Month Traditional School Year</option>
+            <option val='2'>Year Round</option>
+          </select>
+        </div>
+
+        <div class='form-group'>
+          <label for='state_id'>State</label>
+          <select name='state_id' class='form-control' />
+            <option val='' selected disabled>-- Pick a State --</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+          </select>
+        </div>
+
+        <div class='form-group'>
+          <label for='strengths'>Tell Us Your Strengths as a Montessori Program (1000 character limit)</label>
+          <textarea name='strengths' maxlength='1000' class='form-control'></textarea>
+        </div>
+
+        <div class='form-group'>
+          <label for='growth'>Tell Us About Some Areas of Growth (1000 character limit)</label>
+          <textarea name='growth' maxlength='1000' class='form-control'></textarea>
+        </div>
+
+        <div class='form-group'>
+          <label for='motto'>Tell Us Your School's Mission/Vision (1000 character limit)</label>
+          <textarea name='motto' maxlength='1000' class='form-control'></textarea>
+        </div>
+
+        <div class='form-group'>
+          <label for='other_training'>Training Types You're Looking For (1000 character limit)</label>
+          <textarea name='other_training' maxlength='1000' class='form-control'></textarea>
+        </div>
+
+        <input type='submit' value='Sign Me Up!' class='btn btn-lg btn-success' />
+      </form>
+    </div>
+  </div>
+</section>
 
 
 {% endblock %}

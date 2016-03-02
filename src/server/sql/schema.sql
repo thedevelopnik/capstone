@@ -7,7 +7,6 @@ create table states (
   state varchar(2)
 );
 
-
 drop table if exists training_types;
 create table training_types (
   id serial primary key,
@@ -76,7 +75,8 @@ create table teacher_profile (
   profile_img varchar(255),
   first_name varchar(30),
   last_name varchar(30),
-  program varchar(50),
+  training_id references training_types(id),
+  program varchar(30),
   grad_year integer,
   strengths varchar(1000),
   growth varchar(1000),
