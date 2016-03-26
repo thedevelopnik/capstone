@@ -1,7 +1,7 @@
 .hero {
-  height: 600px;
+  height: 60rem;
   position: fixed;
-  top: -10px;
+  top: -1rem;
   z-index: 0;
   background-image: url('/images/jumping.jpg');
   background-position: center;
@@ -22,6 +22,14 @@
   width: 100%;
 }
 
+.lgt-back {
+  background-color: #e6e6e6;
+}
+
+.lgt-padding {
+  padding: 1rem;
+}
+
 .main-welcome {
   position: relative;
   left: 40%;
@@ -32,7 +40,7 @@
 .overlap {
   position: relative;
   z-index: 1;
-  margin-top: 540px;
+  margin-top: 54rem;
   background-color: white;
   opacity: 1;
   overflow: hidden;
