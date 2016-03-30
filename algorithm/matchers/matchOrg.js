@@ -1,4 +1,4 @@
-var calc = require('./calculators');
+var calc = require('../calculators');
 
 module.exports = function (schOrg, teaOrg) {
   if (calc.someMatch(schOrg, teaOrg) === true) {

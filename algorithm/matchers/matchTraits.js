@@ -1,4 +1,4 @@
-var calc = require('./calculators');
+var calc = require('../calculators');
 
 module.exports = function (schTraits, teaTraits) {
   if (calc.someMatch(schAge, teaAge) === true) {

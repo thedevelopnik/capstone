@@ -28,6 +28,7 @@ module.exports = {
     return (divisor/dividend);
   },
 
+  // calculate match percent
   matchPercent: function(age, cal, loc, org, size, state, training, traits) {
     return ((0.1 * training) + (1 * loc) + (1 * org) + (1 * size) + (0.5 * cal) + (5 * state) + (10 * traits) + (1 * age))/8;
   }
