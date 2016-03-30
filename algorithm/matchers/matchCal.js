@@ -1,6 +1,9 @@
 var calc = require('../calculators');
 
 module.exports = function (schCal, teaCal) {
-  var count = calc.countNumOfMatches(schCal, teaCal);
-  return calc.findDecimal(count, teaCal.length);
+  if (calc.someMatch(schCal, teaCal) === true) {
+    return 1;
+  } else {
+    return (-1);
+  }
 };
