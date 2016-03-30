@@ -30,7 +30,7 @@ module.exports = {
 
   // calculate match percent
   matchPercent: function(age, cal, loc, org, size, state, training, traits) {
-    return ((0.1 * training) + (1 * loc) + (1 * org) + (1 * size) + (0.5 * cal) + (5 * state) + (10 * traits) + (1 * age))/8;
+    return ((1 * training) + (10 * loc) + (10 * org) + (10 * size) + (5 * cal) + (50 * state) + (100 * traits) + (10 * age))/196;
   }
 
 };
