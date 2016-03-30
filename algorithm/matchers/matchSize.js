@@ -1,3 +1,5 @@
+var calc = require('./calculators');
+
 module.exports = function (schSize, teaSize) {
   if (calc.someMatch(schSize, teaSize) === true) {
     return 1;
