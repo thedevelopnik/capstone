@@ -1,5 +1,5 @@
 module.exports = {
-  training: [1, 3],
+  training: [1, 2],
   locType: [3],
   orgType: [1],
   size: [2],
